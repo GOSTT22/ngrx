@@ -1,0 +1,45 @@
+{
+    "houses": [
+      {
+        "id": 1,
+        "city": "Kyiv",
+        "street": "Khreshchatyk",
+        "Num_house": 2,
+        "Type_house": "brick house",
+        "Height_house": 9
+      },
+      {
+        "id": 2,
+        "city": "Kyiv",
+        "street": "Sofievskaya",
+        "Num_house": 3,
+        "Type_house": "brick house",
+        "Height_house": 5
+      },
+      {
+        "id": 3,
+        "city": "Kyiv",
+        "street": "Vladimirskaya",
+        "Num_house": 6,
+        "Type_house": "brick house",
+        "Height_house": 9
+      },
+      {
+        "id": 4,
+        "city": "Kyiv",
+        "street": "Ivan Franko",
+        "Num_house": 8,
+        "Type_house": "panel house",
+        "Height_house": 22
+      },
+      {
+        "id": 5,
+        "city": "Kyiv",
+        "street": "Khreshchatyk",
+        "Num_house": 3,
+        "Type_house": "brick house",
+        "Height_house": 9
+      }
+
+    ]
+}

@@ -1,0 +1,23 @@
+<ng-container *ngIf="valueInState$ | async as value">
+    {{value}}
+</ng-container>
+<button (click)="setValue('Hello World!')">BUT1</button>
+<button (click)="setValue('Robocod')">setset</button>
+<button (click)="getValue()">GET</button>
+
+<ng-container *ngIf="error$ | async as error">
+    {{error}}
+</ng-container>
+
+<router-outlet></router-outlet>
+
+<button (click)="createNewHouse()">Create New</button>
+<ng-container *ngIf="houses$ | async as allHouses">
+    <ng-container *ngFor="let house of allHouses">
+        <div class="house">
+            {{house.id}} {{house.city}} {{house.street}} {{house.Num_house}} {{house.Type_house}} {{house.Height_house}}
+            <button click="deleteHouse()">Delete</button>
+        </div>
+    
+    </ng-container>
+</ng-container>
