@@ -1,9 +1,9 @@
 <ng-container *ngIf="valueInState$ | async as value">
     {{value}}
 </ng-container>
-<button (click)="setValue('Hello World!')">BUT1</button>
-<button (click)="setValue('Robocod')">setset</button>
-<button (click)="getValue()">GET</button>
+<button (click)="setValue('Hello WORLD!')">set_1</button>
+<button (click)="setValue('Button 2 run')">set_2</button>
+<button (click)="getValue()">get</button>
 
 <ng-container *ngIf="error$ | async as error">
     {{error}}
@@ -11,13 +11,13 @@
 
 <router-outlet></router-outlet>
 
-<button (click)="createNewHouse()">Create New</button>
-<ng-container *ngIf="houses$ | async as allHouses">
+
+<!-- <ng-container *ngIf="houses$ | async as allHouses">
     <ng-container *ngFor="let house of allHouses">
         <div class="house">
             {{house.id}} {{house.city}} {{house.street}} {{house.Num_house}} {{house.Type_house}} {{house.Height_house}}
-            <button click="deleteHouse()">Delete</button>
         </div>
     
     </ng-container>
-</ng-container>
+</ng-container> -->
+<!-- <button (click)="createNewHouse()">Create New</button> -->

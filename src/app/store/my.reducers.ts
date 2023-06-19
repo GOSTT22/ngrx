@@ -2,7 +2,11 @@ import { Action, createReducer, on } from "@ngrx/store";
 import { MyStateInterface } from "./myState.interface";
 import { setValue, setValueFailure, setValueSuccess } from "./my.actions";
 
-// const clients = [{}]
+// const clients = [{
+//     fio: 'Semen',
+//     age: '18',
+//     job: 'stident'
+// }]
 
 const initialState: MyStateInterface = {
     value: null,
@@ -12,11 +16,11 @@ const initialState: MyStateInterface = {
 const myReducer = createReducer(
     initialState,
     // on(
-    //     getAllClients,
-    //     (state): ClientsStateInterface => (
-    //         {...state, allClients: clietns}
+    //     setAllClients,
+    //     (state): MyStateInterface => (
+    //         {...state, allClients: clients}
     //     )
-    // )
+    // ),
     on(
         setValue, 
         (state):MyStateInterface => (
